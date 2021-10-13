@@ -1,0 +1,56 @@
+.citis input[type=text],
+.citis select,
+.citis textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	resize: vertical;
+	color: black;
+}
+
+.citis input[type=text]:focus {
+	border: 1px solid rgb(124, 153, 240);
+}
+
+
+.citis label {
+	padding: 9px 9px 9px 9px;
+	display: inline-block;
+	color: black;
+
+}
+
+.citiscol-25 {
+	float: left;
+	width: 15%;
+	margin-top: 6px;
+}
+
+.citiscol-75 {
+	float: left;
+	width: 75%;
+}
+
+
+
+
+
+
+
+/* Clear floats after the columns */
+.citis:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+	.citiscol-25,
+	.citiscol-75 {
+		width: 100%;
+		margin-top: 0;
+	}
+}
